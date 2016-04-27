@@ -1,0 +1,54 @@
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity" x:Name="Дроп_Name"
+	x:Class="raspisScreens.Дроп"
+	Width="720" Height="24" mc:Ignorable="d" Background="#A519ECF1" Foreground="{x:Null}">
+
+	<Grid x:Name="LayoutRoot" Background="#6619ECF1">
+		<Button Content="Button" HorizontalAlignment="Left" Margin="320,0,0,0" Width="24" BorderBrush="{x:Null}" Foreground="{x:Null}">
+			<Button.Background>
+				<ImageBrush ImageSource="boxdownload32.png" Stretch="Uniform"/>
+			</Button.Background>
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateToScreenAction TargetScreen="raspisScreens.Screen_1_3"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<TextBlock HorizontalAlignment="Left" Margin="262,7.792,0,0" Style="{DynamicResource BasicTextBlock-Sketch}" Width="58" FontSize="9.333" Foreground="White"><Run Language="ru-ru" Text="Сохр.на "/><Run Text="Dropbox"/></TextBlock>
+		<TextBlock HorizontalAlignment="Right" Margin="0,7.792,288,4.667" Style="{DynamicResource BasicTextBlock-Sketch}" Width="72" FontSize="9.333" Foreground="White"><Run Language="ru-ru" Text="Импорт из "/><Run Text="Dropbox"/></TextBlock>
+		<Button Content="Button" HorizontalAlignment="Right" Margin="0,0,260,0" Style="{DynamicResource Button-Sketch}" Width="24" Foreground="{x:Null}" BorderBrush="{x:Null}">
+			<Button.Background>
+				<ImageBrush ImageSource="boxupload32.png"/>
+			</Button.Background>
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateToScreenAction TargetScreen="raspisScreens.Screen_1_3"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button Content="Button" HorizontalAlignment="Left" Margin="224,0,0,0" Style="{DynamicResource Button-Sketch}" Width="24" BorderBrush="{x:Null}" Foreground="{x:Null}">
+			<Button.Background>
+				<ImageBrush ImageSource="shieldcross32.png" Stretch="Uniform"/>
+			</Button.Background>
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateToScreenAction TargetScreen="raspisScreens.Screen_2"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<TextBlock HorizontalAlignment="Left" Margin="151.667,7.667,0,0" Style="{DynamicResource BasicTextBlock-Sketch}" Width="68.333" Foreground="White" FontSize="9.333"><Run Language="ru-ru" Text="Сохранить на диск"/></TextBlock>
+		<TextBlock HorizontalAlignment="Right" Margin="0,7.667,181.333,4.667" Style="{DynamicResource BasicTextBlock-Sketch}" Width="66.667" Foreground="White" FontSize="9.333"><Run Language="ru-ru" Text="Загрузить с диска"/></TextBlock>
+		<Button Content="Button" HorizontalAlignment="Right" Margin="0,0,157.333,0" Style="{DynamicResource Button-Sketch}" Width="24" BorderBrush="{x:Null}" Foreground="{x:Null}">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateToScreenAction TargetScreen="raspisScreens.Screen_2"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+			<Button.Background>
+				<ImageBrush ImageSource="upload32.png"/>
+			</Button.Background>
+		</Button>
+		<ed:BlockArrow Fill="{DynamicResource BaseBackground-Sketch}" ed:GeometryEffect.GeometryEffect="Sketch" HorizontalAlignment="Left" Margin="252,2.25,0,0" Orientation="Up" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" Width="4"/>
+		<ed:BlockArrow Fill="{DynamicResource BaseBackground-Sketch}" ed:GeometryEffect.GeometryEffect="Sketch" HorizontalAlignment="Left" Margin="348,0,0,0" Orientation="Up" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" Width="4"/>
+		<ed:BlockArrow Fill="{DynamicResource BaseBackground-Sketch}" ed:GeometryEffect.GeometryEffect="Sketch" HorizontalAlignment="Right" Margin="0,0,252,0" Orientation="Up" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" Width="4"/>
+	</Grid>
+</UserControl>

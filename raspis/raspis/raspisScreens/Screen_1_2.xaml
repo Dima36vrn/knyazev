@@ -1,0 +1,22 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Name="Screen_1_2_Name"
+	mc:Ignorable="d"
+	x:Class="raspisScreens.Screen_1_2"
+	Width="128" Height="32" Background="#71F7002D">
+
+	<Grid x:Name="LayoutRoot" Background="#71F7002D" Width="128" Height="32">
+		<Button Content="Button" HorizontalAlignment="Right" Margin="0,3.5,8,4.25" Width="24" Height="24" BorderBrush="{x:Null}" Foreground="{x:Null}">
+			<Button.Background>
+				<ImageBrush ImageSource="stop32.png" Stretch="Uniform"/>
+			</Button.Background>
+		</Button>
+		<Button Content="Button" Margin="0,3.625,40,4.375" Width="24" Height="24" HorizontalAlignment="Right" d:LayoutOverrides="Width" Foreground="{x:Null}" BorderBrush="{x:Null}">
+			<Button.Background>
+				<ImageBrush ImageSource="minus32.png" Stretch="Uniform"/>
+			</Button.Background>
+		</Button>
+	</Grid>
+</UserControl>

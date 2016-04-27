@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "raspis", "raspis\raspis.csproj", "{20e52e61-f3e8-43c9-bc83-c20442c57c3d}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "raspisScreens", "raspis\raspisScreens\raspisScreens.csproj", "{a86ccd38-0368-45da-82fc-63a6a9206b3a}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20E52E61-F3E8-43C9-BC83-C20442C57C3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20E52E61-F3E8-43C9-BC83-C20442C57C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20E52E61-F3E8-43C9-BC83-C20442C57C3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20E52E61-F3E8-43C9-BC83-C20442C57C3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A86CCD38-0368-45DA-82FC-63A6A9206B3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A86CCD38-0368-45DA-82FC-63A6A9206B3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A86CCD38-0368-45DA-82FC-63A6A9206B3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A86CCD38-0368-45DA-82FC-63A6A9206B3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

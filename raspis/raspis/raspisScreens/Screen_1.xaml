@@ -1,0 +1,30 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity" xmlns:local="clr-namespace:raspisScreens" x:Name="Screen_1_Name"
+	mc:Ignorable="d"
+	x:Class="raspisScreens.Screen_1"
+	Width="320" Height="480">
+
+	<Grid x:Name="LayoutRoot" Width="320" Height="480">
+		<Grid.Background>
+			<ImageBrush ImageSource="background1920x1080.jpg"/>
+		</Grid.Background>
+		<Button Content="Ок" Height="40" Margin="120,0,120,40" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Background="#99E41919" Foreground="#FFFDFDFD">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateToScreenAction TargetScreen="raspisScreens.Screen_1_1"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<local:Screen_1_2 HorizontalAlignment="Right" VerticalAlignment="Top" d:IsPrototypingComposition="True" Width="128"/>
+		<TextBlock Height="32" Margin="48,128,40,0" Style="{DynamicResource BasicTextBlock-Sketch}" VerticalAlignment="Top" FontSize="18.667" Foreground="White" OpacityMask="White"><Run Language="ru-ru" Text=" Выберите день начала семестра"/></TextBlock>
+		<DatePicker Height="32" Margin="48,160,40,0" VerticalAlignment="Top"/>
+		<TextBlock Height="40" Margin="56,0,40,200" Style="{DynamicResource BasicTextBlock-Sketch}" VerticalAlignment="Bottom" FontSize="18.667" Foreground="White"><Run Language="ru-ru" Text="Продолжительность семестра"/><LineBreak/><Run Language="ru-ru" Text="              в неделях"/></TextBlock>
+		<ComboBox Height="28" Margin="80,0,80,168" VerticalAlignment="Bottom" FontFamily="Segoe UI" IsDropDownOpen="True">
+			<ComboBoxItem Background="#00000000" Content="17"/>
+			<ComboBoxItem Background="#00000000" Content="18"/>
+		</ComboBox>
+	</Grid>
+</UserControl>

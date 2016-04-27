@@ -1,0 +1,103 @@
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:raspisScreens" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity" mc:Ignorable="d" x:Name="Screen_1_1_Name"
+	x:Class="raspisScreens.Screen_1_1"
+	Width="720" Height="480">
+
+	<Grid x:Name="LayoutRoot" Width="720" Height="480">
+		<Grid.Background>
+			<ImageBrush ImageSource="pack://siteoforigin:,,,/Ultra_Full_HD_Wallpaper_049.jpg"/>
+		</Grid.Background>
+		<local:Дроп VerticalAlignment="Bottom" d:IsPrototypingComposition="True" Height="24" Background="#6619ECF1"/>
+		<Calendar HorizontalAlignment="Left" Height="168" Margin="8,40,0,0" VerticalAlignment="Top" Width="192" BorderBrush="{x:Null}"/>
+		<Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Right" Margin="0,80,48,40" Width="265.625" Opacity="0.87">
+			<Border.Background>
+				<ImageBrush ImageSource="pack://siteoforigin:,,,/texture6.jpg"/>
+			</Border.Background>
+			<TextBlock Height="16" Margin="7,39,7,0" Style="{DynamicResource BasicTextBlock-Sketch}" VerticalAlignment="Top"><Run Language="ru-ru" Text="Время. Предмет. Тип. Препод. Ауд. Корп. "/></TextBlock>
+		</Border>
+		<Border BorderThickness="1" Height="160" Margin="16,0,0,40" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="320" Opacity="0.855">
+			<Border.Background>
+				<ImageBrush ImageSource="pack://siteoforigin:,,,/texture6.jpg"/>
+			</Border.Background>
+			<TextBox Height="20" Margin="15,0,15,55" Style="{DynamicResource BasicTextBox-Sketch}" TextWrapping="Wrap" Text="Закончить л\р по химии" VerticalAlignment="Bottom" Opacity="0.75"/>
+		</Border>
+		<local:Screen_1_2 VerticalAlignment="Top" d:IsPrototypingComposition="True" Height="32" HorizontalAlignment="Right" Width="128"/>
+		<TextBlock HorizontalAlignment="Left" Height="27.264" Margin="96.01,0,0,204.743" Style="{DynamicResource BasicTextBlock-Sketch}" VerticalAlignment="Bottom" Width="156.73" FontSize="24" Foreground="Black" Opacity="0.805" RenderTransformOrigin="0.5,0.5"><TextBlock.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="0.239"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</TextBlock.RenderTransform><TextBlock.Background>
+				<ImageBrush ImageSource="pack://siteoforigin:,,,/texture6.jpg" Stretch="UniformToFill"/>
+			</TextBlock.Background><Run Language="ru-ru" Text="Задачи на нелелю"/></TextBlock>
+		<ed:LineArrow Fill="{DynamicResource BaseBackground-Sketch}" HorizontalAlignment="Left" Height="16" Margin="27.667,0,0,192" StrokeThickness="2" VerticalAlignment="Bottom" Width="220.999" RenderTransformOrigin="0.5,0.5" Stroke="#FFF70D0D">
+			<ed:LineArrow.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="-1"/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</ed:LineArrow.RenderTransform>
+		</ed:LineArrow>
+		<Button Content="Button" HorizontalAlignment="Left" Height="16" Margin="16,0,0,176" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="16" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="{x:Null}">
+			<Button.Background>
+				<ImageBrush ImageSource="plus32.png" Stretch="Uniform"/>
+			</Button.Background>
+		</Button>
+		<Button Content="Button" HorizontalAlignment="Left" Height="16" Margin="40,0,0,176" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="16" BorderBrush="{x:Null}" Foreground="{x:Null}">
+			<Button.Background>
+				<ImageBrush ImageSource="pencil32.png" Stretch="Uniform"/>
+			</Button.Background>
+		</Button>
+		<TextBox HorizontalAlignment="Left" Height="24" Margin="32,0,0,144" Style="{DynamicResource BasicTextBox-Sketch}" TextWrapping="Wrap" Text="Сдать л\р по физике" VerticalAlignment="Bottom" Width="288" Opacity="0.75"/>
+		<TextBox HorizontalAlignment="Left" Height="20" Margin="32,0,0,120" Style="{DynamicResource BasicTextBox-Sketch}" TextWrapping="Wrap" Text="Начать курсовую по ТПР" VerticalAlignment="Bottom" Width="288" Opacity="0.75"/>
+		<TextBox HorizontalAlignment="Left" Height="24" Margin="32,0,0,64" Style="{DynamicResource BasicTextBox-Sketch}" TextWrapping="Wrap" Text="Поставить Expression Blend 4" VerticalAlignment="Bottom" Width="288" Opacity="0.75"/>
+		<Button Content="Button" HorizontalAlignment="Left" Height="16" Margin="64,0,0,176" VerticalAlignment="Bottom" Width="16" BorderBrush="{x:Null}" Foreground="{x:Null}">
+			<Button.Background>
+				<ImageBrush ImageSource="scissors32.png" Stretch="Uniform"/>
+			</Button.Background>
+		</Button>
+		<ListBox HorizontalAlignment="Left" Height="128" Margin="324,0,0,48" VerticalAlignment="Bottom" Width="8" Opacity="0.65"/>
+		<CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" Margin="16,0,0,144" VerticalAlignment="Bottom" Width="12"/>
+		<CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="15.667" Margin="16,0,0,120.13" VerticalAlignment="Bottom" Width="12"/>
+		<CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" Margin="16,0,0,95.797" VerticalAlignment="Bottom" Width="12"/>
+		<CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="15.5" Margin="16,0,0,69" VerticalAlignment="Bottom" Width="12"/>
+		<TextBlock HorizontalAlignment="Right" Height="28" Margin="0,48,80,0" Style="{DynamicResource BasicTextBlock-Sketch}" VerticalAlignment="Top" Width="200" Foreground="Black" FontSize="24"><Run Language="ru-ru" Text="Расписание на день">
+				<Run.Background>
+					<ImageBrush/>
+				</Run.Background>
+			</Run></TextBlock>
+		<ed:LineArrow BendAmount="0" EndArrow="OpenArrow" Fill="{DynamicResource BaseBackground-Sketch}" ed:GeometryEffect.GeometryEffect="Sketch" HorizontalAlignment="Right" Height="179.573" Margin="0,-17.171,179.309,0" StartArrow="NoArrow" StrokeThickness="2" VerticalAlignment="Top" Width="21.05" RenderTransformOrigin="0.546,0.411" Stroke="#FFF90404">
+			<ed:LineArrow.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="89.43"/>
+					<TranslateTransform X="2.362" Y="24.828"/>
+				</TransformGroup>
+			</ed:LineArrow.RenderTransform>
+		</ed:LineArrow>
+		<Button Content="Button" HorizontalAlignment="Right" Height="24" Margin="0,96,280,0" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Top" Width="24" BorderBrush="{x:Null}" Foreground="{x:Null}">
+			<Button.Background>
+				<ImageBrush ImageSource="pencil32.png"/>
+			</Button.Background>
+		</Button>
+		<ed:BlockArrow Fill="{DynamicResource BaseBackground-Sketch}" ed:GeometryEffect.GeometryEffect="Sketch" HorizontalAlignment="Right" Margin="0,120,260.396,40" Orientation="Down" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" Width="2.666"/>
+		<ed:BlockArrow Fill="{DynamicResource BaseBackground-Sketch}" ed:GeometryEffect.GeometryEffect="Sketch" HorizontalAlignment="Right" Margin="0,120,200,40" Orientation="Down" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" Width="2"/>
+		<ed:BlockArrow Fill="{DynamicResource BaseBackground-Sketch}" ed:GeometryEffect.GeometryEffect="Sketch" HorizontalAlignment="Right" Margin="0,120,171.583,40" Orientation="Down" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" Width="2.25"/>
+		<ed:BlockArrow Fill="{DynamicResource BaseBackground-Sketch}" ed:GeometryEffect.GeometryEffect="Sketch" HorizontalAlignment="Right" Margin="0,120,122.833,40" Orientation="Down" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" Width="2"/>
+		<ed:BlockArrow Fill="{DynamicResource BaseBackground-Sketch}" ed:GeometryEffect.GeometryEffect="Sketch" HorizontalAlignment="Right" Margin="0,120,94,40" Orientation="Down" Stroke="{DynamicResource BaseBorder-Sketch}" StrokeThickness="2" Width="2"/>
+		<Button Content="Button" HorizontalAlignment="Right" Height="24" Margin="0,8,104,0" VerticalAlignment="Top" Width="24" BorderBrush="{x:Null}" Foreground="{x:Null}">
+			<Button.Background>
+				<ImageBrush ImageSource="gear32.png" Stretch="Uniform"/>
+			</Button.Background>
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateToScreenAction TargetScreen="raspisScreens.Screen_1"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+	</Grid>
+</UserControl>
